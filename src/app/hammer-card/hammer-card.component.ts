@@ -199,7 +199,14 @@ HTML (no need of angular material, can use simple html)
   }
 
   resetAnimationState() {
-    this.animationState = '';
+     // runs at the end of animation so we can 
+     // run a funtion here.
+     if(this.animationState != ''){
+      console.log("we can run a function here.")
+     }
+
+      this.animationState = '';
+  }
   }
 
  
