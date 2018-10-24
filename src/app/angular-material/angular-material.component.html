@@ -1,0 +1,42 @@
+<main>
+
+  <h2>ANGULAR MATERIAL</h2>
+  <div class="box">
+      <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let option of options" [value]="option">
+                {{option}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </form>
+  </div>
+
+
+
+  <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Auto Fill
+          </mat-panel-title>
+          <mat-panel-description>
+            Type your name and age
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <pre>
+            "import MatAutocompleteModule,MatFormFieldModule ,MatInputModule from '@angular/material';"
+        </pre>
+    
+        
+    
+        
+      </mat-expansion-panel>
+   
+    </mat-accordion>
+ 
+  
+</main>
